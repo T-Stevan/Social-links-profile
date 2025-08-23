@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      box-sizing: border-box;
+      margin: 0;
+      background-color: hsl(0, 0%, 8%);
+      font-size: 14px;
+      font-family: Inter;
+    }
+    .container .card{
+      padding: 100px 30px;
+      margin: 700px;
+    }
+    .container .card {
+      background-color: hsl(0, 0%, 12%);
+      margin: 100px;
+      padding: 1px 10px 20px 10px;
+      border-radius: 15px;
+    } 
+    .content .photo{
+      position: relative;
+      top: 10px;
+    }
+    .about h3{
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+    }
+    .about h4{
+      color: hsl(75, 94%, 57%);
+      position: relative;
+      bottom: 15px;
+      text-align: center;
+    }
+    .about p{
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+    }
+    .socials{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: hsl(0, 0%, 12%);
+      padding: 10px;
+    }
+    .socials button{
+      border-radius: 8px;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      padding: 10px;
+      font-weight: 700;
+    }
+    .card .photo img{
+      border-radius: 50%;
+      width: 90px;
+      display: flex;
+      justify-self: center; 
+    }
+    @media screen and (min-width:968px) {
+      .container .card{
+        padding: 15px;
+        margin: 100px 400px;
+      }
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+        <div class="photo">
+          <img src="assets/images/avatar-jessica.jpeg" alt="Profile picture">
+        </div>
+        <div class="about">
+          <h3>Jessica Randall</h3>
+          <h4>London, United Kingdom</h4>
+          <p>"Front-end developer and avid reader."</p>
+        </div>
+        <div class="socials">
+          <button>GitHub</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instagram</button>
+        </div>
+     </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">T-Stevan</a>.
+  </div>
+</body>
+</html>
